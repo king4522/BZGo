@@ -110,6 +110,7 @@ func init() {
 // bgColor 是状态条的背景颜色，如果为 nil，则默认使用灰色 (100, 100, 100)
 // textSize 是状态条上的文字大小，如果小于等于 0，则默认使用 45
 func HudInit(x1, y1, x2, y2 int, bgColor color.Color, textSize int) {
+	fmt.Fprintln(bgColor)
 	if s2i(device.SdkInt) > 27 {
 		var rInt, gInt, bInt int
 		if bgColor == nil {
